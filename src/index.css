@@ -1,0 +1,45 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  height: 100%;
+}
+/* style={{backgroundColor: '#71727382'}} */
+
+.bg { 
+  position: fixed;
+  z-index: -1;
+
+  /* The image used */
+  background-image: url("/images/bottles-copy.jpg");
+
+  /* Full height */
+  height: 100%;
+  width:100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .welcome  {
+  margin-top: 50%;
+} */
+
+.landing {
+  border: 5px solid black;
+  text-align: center;
+  display: inline;
+  /* padding: 2%; */
+}
+
+@media screen and (min-width: 1024px) {
+  /* .welcome {
+    margin-top: 20%;
+  } */
+
+  /* .landing {
+    padding: .6%;
+  } */
+}
