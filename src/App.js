@@ -17,6 +17,7 @@ class App extends Component {
     this.setState(prevState => ({
       isToggleOn: !prevState.isToggleOn
     }));
+    console.log('clicked');
   }
 
   render() {
