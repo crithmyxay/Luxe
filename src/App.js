@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navigation from './components/Navigation';
 import Landing from './components/Landing'
+import Prices from './components/Prices';
 
 
 class App extends Component {
@@ -26,7 +27,21 @@ class App extends Component {
         <div className='bg'></div>
         <Navigation showDropdown={this.showDropdown} isToggleOn={this.state.isToggleOn}/>
         <Landing />
-        <div className="container"></div>
+        <div className="container container-fluid text-center center">
+          <div className="col-md-4"><Prices /></div>
+        </div>
+        <div className="container container-fluid text-center center">
+          <div className="col-md-4"><Prices /></div>
+        </div>
+        <div className="container container-fluid text-center center">
+          <div className="col-lg-12" style={{height: '1000px'}}></div>
+        </div>
+        <div className="container container-fluid text-center center">
+          <div className="col-md-4"><Prices /></div>
+        </div>
+        <div className="container container-fluid text-center center">
+          <div className="col-md-4"><Prices /></div>
+        </div>
       </div>
     );
   }
