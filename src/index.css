@@ -23,23 +23,28 @@ body, html {
   background-size: cover;
 }
 
-/* .welcome  {
-  margin-top: 50%;
-} */
-
 .landing {
   border: 5px solid black;
   text-align: center;
   display: inline;
-  /* padding: 2%; */
 }
 
-@media screen and (min-width: 1024px) {
-  /* .welcome {
-    margin-top: 20%;
-  } */
+#table {
+  /* background-color: #ffffff69; */
+}
 
-  /* .landing {
-    padding: .6%;
-  } */
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+td {
+  color: #9a1eca;
+}
+
+@media screen and (min-width: 992px) {
+  .disappear {
+    display: none;
+    background-color: #ffffff69;
+  }
 }

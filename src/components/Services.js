@@ -1,18 +1,75 @@
 import React from 'react';
 
-const Services = props => {
-  return (
-    <li className="nav-item dropdown">
-      <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false"
-        onClick={(e) => {props.showDropdown(e)}}>
-        {props.name}
-      </a>
-      <div className={classDropdownMenu} aria-labelledby="navbarDropdown">
-        {props.children}
-      </div>
-    </li>
-  )
+const Services = {
+  type: [
+    {
+      service:'Mani',
+      level: [
+        {
+          name: 'Basic',
+          price: '$12'
+        }, 
+        { 
+          name: 'Mini Luxe',
+          price: '$15'
+        }, 
+        {
+          name:'Luxe',
+          price: '$20'
+        }, 
+        {
+          name: 'Royal',
+          price: '$25'
+        }, 
+        {
+          name: 'Gel Manicure',
+          price: '$30'
+        }
+      ]
+    },
+    {
+      service:'Pedi',
+      level: [
+        {
+          name: 'Basic',
+          price: '$20'
+        }, 
+        { 
+          name: 'Mini Luxe',
+          price: '$27'
+        }, 
+        {
+          name:'Luxe',
+          price: '$35'
+        }, 
+        {
+          name: 'Royal',
+          price: '$40'
+        }
+      ]
+    },
+    {
+      service:'Combos',
+      level: [
+        {
+          name: 'Basic',
+          price: '$30'
+        }, 
+        { 
+          name: 'Mini Luxe',
+          price: '$40'
+        }, 
+        {
+          name:'Luxe',
+          price: '$50'
+        }, 
+        {
+          name: 'Royal',
+          price: '$60'
+        }
+      ]
+    }
+  ]
 }
 
 export default Services
