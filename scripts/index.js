@@ -1,5 +1,25 @@
-const MAP = `https://maps.googleapis.com/maps/api/js?key=${API_KEY}`
+// Data Target
+const jumbo = $('[data-jumbo]')
 
+//Function to be passed as argument
+const newSize = () => {
+  if ($(window).width() > 550) {
+    jumbo.removeClass('display-4');
+    jumbo.addClass('display-1');
+  }
+  else {
+    jumbo.addClass('display-4')
+    jumbo.removeClass('display-1')
+  }
+}
+
+// Changes Header size of JumboTron on window resize
+$(window).resize(newSize);
+
+// Determines Header size of Jumbotron based on window size on load
+$(document).ready(newSize);
+
+// Navbar Change on Scroll
 $(window).scroll(() => {    
   var scroll = $(window).scrollTop();
   if (scroll >= 50) {
@@ -10,10 +30,7 @@ $(window).scroll(() => {
   }
 });
 
-const getMap = () => {
-  return $.get(MAP);
-}
-
+// Renders Google Map
 function initMap() {
   // The location of salon
   var salon = {lat: 33.853874, lng: -84.214363};
@@ -24,10 +41,4 @@ function initMap() {
   var marker = new google.maps.Marker({position: salon, map: map});
 }
 
-// const drawMap = () => {
-//   getMap()
-//     .then(initMap)
-// }
-
-// drawMap();
 initMap();
