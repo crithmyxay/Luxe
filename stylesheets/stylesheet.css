@@ -23,12 +23,33 @@ body, html {
   background-size: cover;
 }
 
-.new-nav-color {
+nav {
   background-color: #9a88ab;
 }
 
 .logo {
   height: 50px;
+}
+
+.jumbotron {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: auto;
+  align-items: center;
+  background: url('../images/lander.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.fit {
+  width: fit-content;
+  padding: 1.5rem;
+}
+
+#black-border {
+  border: 1px solid black!important;
 }
 
 h1 {
@@ -82,6 +103,10 @@ td {
 #map {
   height: 20rem;
   width: 100%;
+}
+
+#hours > tbody > tr > th, #hours > tbody > tr > td {
+  border: none;
 }
 
 @media screen and (min-width: 375px) {
